@@ -1,10 +1,10 @@
 # 🔒 Hardening de Servidor Linux
 
-Esse projeto documenta o processo de hardening de um Ubuntu Server usando uma abordagem baseada em **Defesa em Profundidade** (*Defense in Depth*).
+Este projeto documenta o processo de hardening de um Ubuntu Server usando uma abordagem baseada em **Defesa em Profundidade** (*Defense in Depth*).
 
 Ao longo do laboratório, são aplicados controles de segurança em diferentes camadas do sistema, incluindo proteção de acesso, firewall, mitigação de ataques de força bruta, auditoria, monitoramento de integridade e confinamento de aplicações.
 
-Todo o processo é validado por auditorias realizadas com o **Lynis**, permitindo comparar o estado inicial e final do servidor e avaliar a evolução da segurança do sistema.
+Todo o processo é validado por auditorias realizadas com o **Lynis**, permitindo comparar o estado inicial e final do servidor e avaliar a evolução da segurança do servidor.
 
 > [!IMPORTANT]
 > **Status do Lab:** 🚧 Em desenvolvimento
@@ -29,7 +29,7 @@ Todo o processo é validado por auditorias realizadas com o **Lynis**, permitind
 | Ubuntu Server | Sistema operacional                            |
 | Lynis         | Auditoria e avaliação da postura de segurança  |
 | OpenSSH       | Acesso remoto e aplicação de hardening         |
-| UFW           | Firewall e controle de tráfego                 |
+| Nftables      | Firewall e controle de tráfego                 |
 | Fail2Ban      | Mitigação de ataques de força bruta            |
 | Auditd        | Auditoria de eventos do sistema                |
 | AIDE          | Monitoramento de integridade de arquivos (FIM) |
@@ -44,7 +44,7 @@ O projeto adota o conceito de **Defesa em Profundidade (Defense in Depth)**, apl
 | Camada      | Controle                           |
 | ----------- | ---------------------------------- |
 | Acesso      | SSH Hardening e Política de Senhas |
-| Rede        | UFW                                |
+| Rede        | Nftables                           |
 | Intrusão    | Fail2Ban                           |
 | Auditoria   | Auditd                             |
 | Integridade | AIDE                               |
@@ -54,12 +54,12 @@ O projeto adota o conceito de **Defesa em Profundidade (Defense in Depth)**, apl
 ---
 # 📚 Documentação
 
-| Documento              | Descrição                                                       | Status                |
-| ---------------------- | --------------------------------------------------------------- | --------------------- |
-| 01 - Baseline          | Levantamento e documentação do estado inicial do servidor       | 🚧 Em desenvolvimento |
-| 02 - Auditoria Inicial | Auditoria inicial e identificação de oportunidades de hardening | ⏳ Pendente            |
-| 03 - Hardening         | Implementação dos controles de segurança                        | ⏳ Pendente            |
-| 04 - Validação         | Auditoria final e validação das medidas aplicadas               | ⏳ Pendente            |
+| Documento                              | Descrição                                                       | Status                |
+| -------------------------------------- | --------------------------------------------------------------- | --------------------- |
+| [01 - Baseline](./docs/01-baseline.md) | Levantamento e documentação do estado inicial do servidor       | ✅ Concluído           |
+| 02 - Auditoria Inicial                 | Auditoria inicial e identificação de oportunidades de hardening | 🚧 Em desenvolvimento |
+| 03 - Hardening                         | Implementação dos controles de segurança                        | ⏳ Pendente            |
+| 04 - Validação                         | Auditoria final e validação das medidas aplicadas               | ⏳ Pendente            |
 
 ---
 
