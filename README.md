@@ -4,7 +4,7 @@ Este projeto documenta o processo de hardening de um Ubuntu Server usando uma ab
 
 Ao longo do laboratório, são aplicados controles de segurança em diferentes camadas do sistema, incluindo proteção de acesso, firewall, mitigação de ataques de força bruta, auditoria, monitoramento de integridade e confinamento de aplicações.
 
-Todo o processo é validado por auditorias realizadas com o **Lynis**, permitindo comparar o estado inicial e final do servidor e avaliar a evolução da segurança do servidor.
+Todo o processo é validado por auditorias realizadas com o **Lynis**, permitindo comparar o estado inicial e final do servidor e avaliar a evolução da segurança.
 
 > [!IMPORTANT]
 > **Status do Lab:** 🚧 Em desenvolvimento
@@ -54,12 +54,12 @@ O projeto adota o conceito de **Defesa em Profundidade (Defense in Depth)**, apl
 ---
 # 📚 Documentação
 
-| Documento                              | Descrição                                                       | Status                |
-| -------------------------------------- | --------------------------------------------------------------- | --------------------- |
-| [01 - Baseline](./docs/01-baseline.md) | Levantamento e documentação do estado inicial do servidor       | ✅ Concluído           |
-| 02 - Auditoria Inicial                 | Auditoria inicial e identificação de oportunidades de hardening | 🚧 Em desenvolvimento |
-| 03 - Hardening                         | Implementação dos controles de segurança                        | ⏳ Pendente            |
-| 04 - Validação                         | Auditoria final e validação das medidas aplicadas               | ⏳ Pendente            |
+| Documento                                    | Descrição                                                       | Status                |
+| -------------------------------------------- | --------------------------------------------------------------- | --------------------- |
+| [01 - Baseline](./docs/01-baseline.md)       | Levantamento e documentação do estado inicial do servidor       | ✅ Concluído           |
+| [02 - Auditoria Inicial](./docs/02-lynis.md) | Auditoria inicial e identificação de oportunidades de hardening | ✅ Concluído           |
+| 03 - Hardening                               | Implementação dos controles de segurança                        | 🚧 Em desenvolvimento |
+| 04 - Validação                               | Auditoria final e validação das medidas aplicadas               | ⏳ Pendente            |
 
 ---
 
